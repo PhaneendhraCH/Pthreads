@@ -2,6 +2,17 @@
 #include <pthread.h>    // User Space Thread
 #include <unistd.h>     // used for sleep function
 
+/*
+
+As we are not using any synchrnization techniques it is leading to Race Condition.
+
+Compile :
+
+gcc threads2_detach.c -lpthread -o detach 
+
+Creating Object file named  "detach"
+*/
+
 void *my_thread(void *ptr){
 
 	pthread_detach(pthread_self());  // detaching the thread with itself
