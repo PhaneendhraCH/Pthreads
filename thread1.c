@@ -2,6 +2,16 @@
 #include <pthread.h>    // User Space Thread
 #include <unistd.h>     // used for sleep function
 
+/*
+
+As we are not using any synchrnization techniques it is leading to Race Condition.
+
+Compile :
+
+gcc thread1.c -lpthread
+
+*/
+
 void *my_thread(void *ptr){
 	
 	int *n = (int *)ptr;
