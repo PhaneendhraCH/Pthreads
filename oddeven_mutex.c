@@ -11,6 +11,7 @@ Compile :
 gcc oddeven_mutex.c -lpthread -o oddeven_mutex 
 
 Creating Object file named  "oddeven_mutex"
+
 */
 
 int value,data=0,lock_var;
