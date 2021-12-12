@@ -6,7 +6,7 @@
 
 /*
 
-Compile : gcc pthreadsample.c -lpthread -o thr
+Compile : gcc sample_dec2021.c -lpthread -o return
 
 */
 
